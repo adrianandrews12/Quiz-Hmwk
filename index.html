@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Quiz</title>
+</head>
+
+
+<body>
+    <div id="container">
+        <button id="start">Start Quiz</button>
+        <div id="timer">
+            <div id="counter">30sec</div>
+            <div id="timeGauge"></div>
+            <div id="scoreContainer"></div>
+        </div>
+        <div id="intro">
+            <h1>Quiz</h1>
+            <p>Hello welcome, this is a five question quiz that I created. The questions are just random trivia and
+                do not relate at all, there are 5 of them in total. Once you press the button to start the quiz you
+                will be given 30seconds to complete each question. If you do not answer the question in the given
+                amount of time that question will be marked as incorrect and you will be directed to the next. Your
+                scores will be presented to you once you have completed the last question.</p>
+        </div>
+
+        <div class="grid">
+            <div id="quiz" style="display: none;">
+                <h1>Quiz</h1>
+                <hr style="margin-bottom: 20px;">
+                <p id="question"></p>
+                <br>
+                <br>
+                <br>
+                <div id="choices">
+                    <button class="choice" id="A" onclick="checkAnswer('A')">Option A</button>
+                    <button class="choice" id="B" onclick="checkAnswer('B')">Option B</button>
+                    <button class="choice" id="C" onclick="checkAnswer('C')">Option C</button>
+                    <button class="choice" id="D" onclick="checkAnswer('D')">Option D</button>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <hr style="margin-top: 180px;">
+            <footer class="prog">
+                <p id="progression"></p>
+            </footer>
+
+        </div>
+
+        <script src="./script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+
+</html>
